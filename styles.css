@@ -133,10 +133,10 @@ h2 {
 }
 .btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px solid #fff;
   padding: 4px;
-  min-width: 10%;
+  min-width: 15%;
   margin: 0 auto;
   text-decoration: none;
   color: #fff;
@@ -183,7 +183,6 @@ h2 {
 .tech-link {
   font-size: 2rem;
   text-decoration: none;
-  color: #fff;
 }
 
 .tech h2 {
@@ -194,8 +193,92 @@ h2 {
   font-size: 1rem;
 }
 
+#html-logo {
+  color: #e34c26;
+}
+#css-logo {
+  color: #264de4;
+}
+#js-logo {
+  color: #f0db4f;
+}
+#react-logo {
+  color: #61dbfb;
+}
+#python-logo {
+  color: #e31b6d;
+  position: relative;
+}
+.github-logo {
+  color: #6e5494;
+}
+.linkedin-logo {
+  color: #0a66c2;
+}
+.fcc-logo {
+  color: #efefef;
+}
+/* #profiles a {
+  transition: transform 0.2s ease;
+} */
+
 #profiles a:hover {
   color: #e31b6d;
+  transition: color 0.3s ease-in-out;
+  animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite; /* Trigger shake animation on hover */
+}
+#python-icon {
+  position: absolute;
+  top: 1vh;
+  left: 0;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.python-svg {
+  position: absolute;
+  top: 2vh;
+  left: 0;
+  transition: opacity 0.3s ease;
+  width: 2.1rem;
+  height: 2.1rem;
+  object-fit: contain;
+  opacity: 1;
+}
+#python-logo:hover #python-icon {
+  opacity: 1;
+}
+#python-logo:hover .python-svg {
+  opacity: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+  40% {
+    transform: translateX(5px) rotate(0deg);
+  }
+  60% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+  80% {
+    transform: translateX(5px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.statement {
+  margin: 0 auto;
+  width: 80%;
+}
+.statement p {
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* footer  */
