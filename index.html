@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Page</title>
+    <title>Luke Withers Developer</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./src/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -23,11 +41,27 @@
     <header>
       <nav id="navbar">
         <ul>
-          <li><a href="#welcome-section">welcome</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#profiles">profiles</a></li>
+          <li>
+            <a href="#welcome-section"
+              ><span class="nav-word">welcome</span
+              ><i class="fa-solid fa-house-chimney nav-icon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><span class="nav-word">projects</span
+              ><i class="fa-solid fa-pen-to-square nav-icon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#profiles"
+              ><span class="nav-word">profiles</span
+              ><i class="fa-solid fa-link nav-icon"></i
+            ></a>
+          </li>
         </ul>
       </nav>
+      <img class="wov-logo" src="./src/android-chrome-192x192.png" alt="logo" />
     </header>
     <main>
       <!-- this is the welcome/hero section -->
@@ -38,7 +72,7 @@
             <h2>I'm a front-end software developer.</h2>
           </div>
           <a href="#projects" class="hero-btn"
-            >check out my work<i class="fa-solid fa-arrow-down"></i
+            ><span>check out my work</span><i class="fa-solid fa-arrow-down"></i
           ></a>
         </div>
       </section>
@@ -46,42 +80,61 @@
       <section id="projects" class="projects">
         <h2 id="project-title">here are some of my projects</h2>
         <div class="card-container">
-          <div class="card">
+          <a
+            href="https://lwithers93.github.io/dice-app/"
+            target="_blank"
+            class="card"
+          >
             <div class="card-content">
               <img src="./src/dice-app.png" alt="dice-app project" />
             </div>
-            <div class="card-caption"><a>link</a></div>
-          </div>
-          <div class="card">
+            <div class="card-caption"><span>Dice App</span></div>
+          </a>
+          <a
+            href="https://lwithers93.github.io/basic-todo-list/"
+            target="_blank"
+            class="card"
+          >
             <div class="card-content">
-              <img src="./src/dice-app.png" alt="dice-app project" />
+              <img src="./src/todo-list-app.png" alt="todo-list-app project" />
             </div>
-            <div class="card-caption"><a>link</a></div>
-          </div>
-          <div class="card">
+            <div class="card-caption"><span>ToDo List</span></div>
+          </a>
+          <a
+            href="https://lwithers93.github.io/react-tic-tac-toe/"
+            target="_blank"
+            class="card"
+          >
             <div class="card-content">
-              <img src="./src/dice-app.png" alt="dice-app project" />
+              <img
+                src="./src/react-tictactoe.png"
+                alt="react-tictactoe project"
+              />
             </div>
-            <div class="card-caption"><a>link</a></div>
-          </div>
-          <div class="card">
+            <div class="card-caption"><span>React Tic Tac Toe</span></div>
+          </a>
+          <a
+            href="https://lwithers93.github.io/workout-app/"
+            target="_blank"
+            class="card"
+          >
             <div class="card-content">
-              <img src="./src/dice-app.png" alt="dice-app project" />
+              <img src="./src/workout-app.png" alt="workout-app project" />
             </div>
-            <div class="card-caption"><a>link</a></div>
-          </div>
-          <div class="card">
+            <div class="card-caption"><span>Workout Web Application</span></div>
+          </a>
+          <!-- <a href="" target="_blank" class="card">
             <div class="card-content">
-              <img src="./src/dice-app.png" alt="dice-app project" />
+              <img src="" alt="project" />
             </div>
-            <div class="card-caption"><a>link</a></div>
-          </div>
-          <div class="card">
+            <div class="card-caption"><span>link</span></div>
+          </a>
+          <a href="" target="_blank" class="card">
             <div class="card-content">
-              <img src="./src/dice-app.png" alt="dice-app project" />
+              <img src="" alt="project" />
             </div>
-            <div class="card-caption"><a>link</a></div>
-          </div>
+            <div class="card-caption"><span>link</span></div>
+          </a>-->
         </div>
         <a href="#profiles" class="btn"
           ><span>find me</span><i class="fa-solid fa-arrow-down"></i
@@ -91,7 +144,7 @@
       <section id="profiles">
         <div class="profiles-content">
           <div class="tech">
-            <h2>my tech stack</h2>
+            <h2 class="tech-header">my tech stack</h2>
             <div class="card-container">
               <div>
                 <a
@@ -155,32 +208,31 @@
             <p>Let's build something together!</p>
           </div>
           <div class="socials">
-            <h2>connect with me:</h2>
+            <h2 class="socials-header">connect with me:</h2>
             <div class="card-container">
-              <div>
+              <div class="profile-container">
                 <a
-                  id="profile-link"
                   class="profile-link github-logo"
                   href="https://github.com/Lwithers93"
                   target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
+                  ><i class="fa-brands fa-github"></i></a
+                ><span class="profile-caption">Github</span>
               </div>
-              <div>
+              <div class="profile-container">
                 <a
                   class="profile-link linkedin-logo"
                   href="https://www.linkedin.com/in/luke-withers/"
                   target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
+                  ><i class="fa-brands fa-linkedin"></i></a
+                ><span class="profile-caption">Linkedin</span>
               </div>
-              <div>
+              <div class="profile-container">
                 <a
                   class="profile-link fcc-logo"
                   href="https://www.freecodecamp.org/lwithers93"
                   target="_blank"
-                  ><i class="fa-brands fa-free-code-camp"></i
-                ></a>
+                  ><i class="fa-brands fa-free-code-camp"></i></a
+                ><span class="profile-caption">freeCodeCamp</span>
               </div>
             </div>
           </div>
