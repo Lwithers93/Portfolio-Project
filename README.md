@@ -16,3 +16,4 @@ published to <a href="https://www.luke-withers.com" target="_blank">luke-withers
 - Links to projects
 - on hover effects for both tech stack and portfolio icons
 - portfolio icons have added sidescroll name effect
+- Meta tags to include preview when sharing the site link
