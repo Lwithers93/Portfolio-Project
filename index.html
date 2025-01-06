@@ -100,6 +100,21 @@
         <h2 id="project-title">here are some of my projects</h2>
         <div class="card-container">
           <a
+            href="https://lwithers93.github.io/lotr-react-web-app/"
+            target="_blank"
+            class="card"
+          >
+            <div class="card-content">
+              <img
+                src="./src/react-lotr-preview.png"
+                alt="lotr-info-app project"
+              />
+            </div>
+            <div class="card-caption">
+              <span>Lord Of The Rings Info App</span>
+            </div>
+          </a>
+          <a
             href="https://lwithers93.github.io/dice-app-pwa/"
             target="_blank"
             class="card"
@@ -235,8 +250,21 @@
           </div>
         </div>
         <!-- keep the footer in the section to maintain background  -->
-        <footer><p>Luke Withers © 2024</p></footer>
+        <footer><p id="copyright"></p></footer>
       </section>
+      <div class="cursor"></div>
     </main>
+    <!-- use JS for copyright year  -->
+    <script>
+      document.getElementById("copyright").innerHTML =
+        "Luke Withers &copy; " + new Date().getFullYear();
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove", (event) => {
+        const { pageX, pageY } = event;
+        cursor.style.left = `${pageX}px`;
+        cursor.style.top = `${pageY}px`;
+      });
+    </script>
   </body>
 </html>
